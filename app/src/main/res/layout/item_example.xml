@@ -11,6 +11,9 @@
             name="model"
             type="com.chrisgaddes.scddiet.ExampleModel" />
 
+        <variable
+            name="isVisible"
+            type="boolean"/>
 
     </data>
 
@@ -23,20 +26,37 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_dot_green"
+                    android:visibility="@{isVisible ? View.VISIBLE : View.GONE}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@{model.text}"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
-
-            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@{model.text}" />
-        </LinearLayout>
+                android:layout_height="1dp"
+                android:src="@color/divider"
+                />
 
+        </LinearLayout>
 
 
     </FrameLayout>

@@ -6,9 +6,6 @@ import android.view.ViewGroup;
 
 import com.chrisgaddes.scddiet.databinding.ItemExampleBinding;
 
-import com.chrisgaddes.scddiet.ExampleViewHolder;
-import com.chrisgaddes.scddiet.databinding.ItemExampleBinding;
-import com.chrisgaddes.scddiet.ExampleModel;
 import com.github.wrdlbrnft.sortedlistadapter.SortedListAdapter;
 
 import java.util.Comparator;

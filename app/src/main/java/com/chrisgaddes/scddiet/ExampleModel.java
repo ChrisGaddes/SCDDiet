@@ -5,6 +5,7 @@ import com.github.wrdlbrnft.sortedlistadapter.SortedListAdapter;
 public class ExampleModel implements SortedListAdapter.ViewModel {
 
     private final long mId;
+
     private final String mText;
 
     public ExampleModel(long id, String text) {
