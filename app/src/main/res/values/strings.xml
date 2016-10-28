@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SCD Diet</string>
-    <string name="searcj">Country search</string>
+    <string name="action_search">Search</string>
+    <string name="model_clicked_pattern">You clicked on %s!</string>
 </resources>
