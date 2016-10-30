@@ -3,6 +3,8 @@
 
     <data>
 
+        <import type="android.view.View"/>
+
         <variable
             name="listener"
             type="com.chrisgaddes.scddiet.ExampleAdapter.Listener" />
@@ -16,6 +18,8 @@
             type="boolean"/>
 
     </data>
+
+
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -40,7 +44,17 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="@dimen/activity_horizontal_margin"
                     android:src="@drawable/ic_dot_green"
-                    android:visibility="@{isVisible ? View.VISIBLE : View.GONE}"/>
+                    android:visibility="@{model.bool ? View.VISIBLE : View.GONE}"/>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_dot_red"
+                    android:visibility="@{!model.bool ? View.VISIBLE : View.GONE}"/>
+
+
 
                 <TextView
                     android:layout_width="match_parent"

@@ -7,10 +7,12 @@ public class ExampleModel implements SortedListAdapter.ViewModel {
     private final long mId;
 
     private final String mText;
+    private final Boolean mBool;
 
-    public ExampleModel(long id, String text) {
+    public ExampleModel(long id, String text, Boolean bool) {
         mId = id;
         mText = text;
+        mBool = bool;
     }
 
     public long getId() {
@@ -19,6 +21,10 @@ public class ExampleModel implements SortedListAdapter.ViewModel {
 
     public String getText() {
         return mText;
+    }
+
+    public Boolean getBool() {
+        return mBool;
     }
 
     @Override

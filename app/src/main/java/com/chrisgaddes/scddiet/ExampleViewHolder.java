@@ -1,5 +1,6 @@
 package com.chrisgaddes.scddiet;
 
+
 import com.chrisgaddes.scddiet.databinding.ItemExampleBinding;
 import com.github.wrdlbrnft.sortedlistadapter.SortedListAdapter;
 
