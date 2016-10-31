@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="android.view.View"/>
+        <import type="android.view.View" />
 
         <variable
             name="listener"
@@ -15,10 +15,9 @@
 
         <variable
             name="isVisible"
-            type="boolean"/>
+            type="boolean" />
 
     </data>
-
 
 
     <FrameLayout
@@ -43,23 +42,26 @@
                     android:layout_height="10dp"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:contentDescription="Legal"
                     android:src="@drawable/ic_dot_green"
-                    android:visibility="@{model.bool ? View.VISIBLE : View.GONE}"/>
+                    android:visibility="@{model.bool ? View.VISIBLE : View.GONE}" />
 
                 <ImageView
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:contentDescription="Illegal"
                     android:src="@drawable/ic_dot_red"
-                    android:visibility="@{!model.bool ? View.VISIBLE : View.GONE}"/>
-
-
+                    android:visibility="@{!model.bool ? View.VISIBLE : View.GONE}" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="12dp"
                     android:text="@{model.text}"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -67,8 +69,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:src="@color/divider"
-                />
+                android:src="@color/divider" />
 
         </LinearLayout>
 
